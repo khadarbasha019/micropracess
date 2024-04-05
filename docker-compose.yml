@@ -14,3 +14,7 @@ services:
       replicas: 3
   social:
     image: khadarbasha019/socialform:v1
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
