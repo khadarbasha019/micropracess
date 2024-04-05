@@ -1,0 +1,16 @@
+version: '3'
+services:
+  login:
+    image: khadarbasha019/loginform:v1
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+  contract:
+    image: khadarbasha019/contractform:v1
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+  social:
+    image: khadarbasha019/socialform:v1
